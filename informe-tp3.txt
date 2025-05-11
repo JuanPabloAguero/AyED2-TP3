@@ -1,0 +1,22 @@
+Introducción:
+TP 3 sobre tablas y funciones de dispersión realizado por el alumno Agüero Juan Pablo.
+El TP consistió en utilizar una tabla de dispersión para el manejo de tareas utilizando la función de dispersión del Método de la multiplicación y la resolución de colisiones de Exploración cuadrática.
+
+Desarrollo:
+Se utilizaron 3 clases, Tarea, TablaDispersa y Main (para las demostraciones de las funcionalidades).
+En la clase Tarea:
+Se creó la clase con sus atributos correspondientes con un código único que se limita a 5 caracteres, su constructor correspondiente, un getter para el codigo y para saber si está activa (IsEsAlta), y un setter que realiza una eliminación lógica (eliminar).
+Además, se utilizó el método toString para ver los atributos de la tarea.
+En la clase TablaDispersa:
+Para la función de dispersión del Método de la multiplicación, parcialmente implementado en el enunciado, fue necesario añadirle el método privado obtenerValorNumerico que convirtiera el String codigo de la tarea a un valor numérico.
+Para la resolución de colisiones de Exploración cuadrática, no fue necesario añadir nada más de lo que ya había en el código del enunciado.
+Se añadió el método privado calcularFactorCarga que actualiza el factor de carga cada vez que se inserta una tarea en la tabla.
+También, se implementaron los métodos:
+insertar, inserta la tarea en la tabla utilizando el Método de multiplicación para calcular la posición y la Exploración cuadrática para resolver posibles colisiones.
+eliminar, eliminación lógica, la tarea sigue en la tabla.
+mostrarTabla, muestra sólo las tareas activas de la tabla.
+En la clase Main:
+Se crearon instancias del objeto Tarea y se probaron sus funcionalidades como insertar, eliminar, mostrarTabla antes o después de la inserción y eliminación, y buscar una tarea eliminada previamente.
+
+Conclusión:
+Esta implementación de tabla dispersa me permitió entender de forma más concreta el funcionamiento de funciones hash y resoluciones de colisiones a nivel código.
